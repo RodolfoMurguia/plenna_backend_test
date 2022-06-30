@@ -24,7 +24,10 @@ exports.CreateDoctor = function (req, res) {
           res.send(err);
           res.status(500);
         }
-        res.json(doctor);
+        else{
+          res.json(doctor);
+          res.status(201);
+        }
       });
     }
   });

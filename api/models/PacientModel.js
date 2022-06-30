@@ -1,7 +1,7 @@
-const mongooose = require('mongoose');
-const Schema = mongooose.Schema;
+var mongooose = require('mongoose');
+var Schema = mongooose.Schema;
 
-const pacientSchema = new Schema({
+var PacientSchema = new Schema({
 
     firstName: {
         type: String,
@@ -50,4 +50,4 @@ const pacientSchema = new Schema({
     }
 });
 
-module.exports = mongooose.model('Pacient', pacientSchema);
+module.exports = mongooose.model('Pacient', PacientSchema);

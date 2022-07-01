@@ -1,0 +1,500 @@
+{
+	"info": {
+		"_postman_id": "4f8b4bd9-9104-48a0-82cc-ab503dd54cfa",
+		"name": "Plenna_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Doctors",
+			"item": [
+				{
+					"name": "Create Doctor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"Eunice\",\r\n    \"lastName\":\"Torres\",\r\n    \"medicalCertificate\":\"3599261\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/doctors",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"doctors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Doctors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/doctors",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"doctors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Doctor by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/doctors/62bd1c8f40fa249c981e62c5",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"doctors",
+								"62bd1c8f40fa249c981e62c5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Doctor",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"Rodolfo\",\r\n    \"lastName\":\"Murguia de la Torre\",\r\n    \"medicalCertificate\":\"359926\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/doctors/62bd1c8f40fa249c981e62c5",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"doctors",
+								"62bd1c8f40fa249c981e62c5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Doctor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/doctors/62bdc4a1b6cc63a4a43ef55c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"doctors",
+								"62bdc4a1b6cc63a4a43ef55c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pacient",
+			"item": [
+				{
+					"name": "Create Pacient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"Michelle\",\r\n    \"lastName\":\"Flores\",\r\n    \"email\": \"michmurguia26@gmail.com\",\r\n    \"phone\": \"5579894515\",\r\n    \"address\": \"Gavilan 181\",\r\n    \"city\": \"Iztapalapa\",\r\n    \"state\": \"CDMX\",\r\n    \"country\": \"MX\",\r\n    \"emergencyContact\": \"Rodolfo M\",\r\n    \"emergencyContactPhone\": \"5579894515\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/pacients/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"pacients",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pacients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/pacients/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"pacients",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pacient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/pacients/62bde13cbe4adeeb99317616",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"pacients",
+								"62bde13cbe4adeeb99317616"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Pacient",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"Michelle\",\r\n    \"lastName\":\"Flores\",\r\n    \"email\": \"michmurguia26@gmail.com\",\r\n    \"phone\": \"5579894515\",\r\n    \"address\": \"Gavilan 199\",\r\n    \"city\": \"Iztapalapa\",\r\n    \"state\": \"CDMX\",\r\n    \"country\": \"MX\",\r\n    \"emergencyContact\": \"Rodolfo M\",\r\n    \"emergencyContactPhone\": \"5579894515\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/pacients/62bde13cbe4adeeb99317616",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"pacients",
+								"62bde13cbe4adeeb99317616"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Pacient",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/pacients/62bde13cbe4adeeb99317616",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"pacients",
+								"62bde13cbe4adeeb99317616"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Consultations",
+			"item": [
+				{
+					"name": "Create Consultation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pacient\":\"62bde160b865ebc72596670c\",\r\n    \"doctor\":\"62bd1c8f40fa249c981e62c5\",\r\n    \"consultationDate\":\"3599261\",\r\n    \"consultationType\":\"Nutricion\",\r\n    \"bloodPresure\":\"110/50\",\r\n    \"temperature\":36.2,\r\n    \"weight\":72.5,\r\n    \"physicalExaminationNotes\":\"No aplica\",\r\n    \"diagnosis\":\"Se confirma obesidad tipo 1\",\r\n    \"treatment\":\"3599261\",\r\n    \"notes\":\"Se recomienda dieta por separado asi como un plan de ejercicio, se solicita segiuimiento mensual\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/consultations/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"consultations",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Consultations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/consultations/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"consultations",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Consultations Per Pacient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/consultations/62bde160b865ebc725966703",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"consultations",
+								"62bde160b865ebc725966703"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Consultation",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pacient\":\"62bde160b865ebc72596670c\",\r\n    \"doctor\":\"62bd1c8f40fa249c981e62c5\",\r\n    \"consultationDate\":\"3599261\",\r\n    \"consultationType\":\"Nutricion\",\r\n    \"bloodPresure\":\"110/50\",\r\n    \"temperature\":36.2,\r\n    \"weight\":72.5,\r\n    \"physicalExaminationNotes\":\"No aplica\",\r\n    \"diagnosis\":\"Se confirma obesidad tipo 1\",\r\n    \"treatment\":\"3599261\",\r\n    \"notes\":\"Se recomienda dieta por separado asi como un plan de ejercicio, se solicita segiuimiento mensual\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/consultations/62be3047ad7ebc9bc62635bc",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"consultations",
+								"62be3047ad7ebc9bc62635bc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Consultation",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/consultations/62bde160b865ebc725966703",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"consultations",
+								"62bde160b865ebc725966703"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medical History",
+			"item": [
+				{
+					"name": "Get Medical Histories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/medicalHistories/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"medicalHistories",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Medical History",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pacient\":\"62bde160b865ebc72596670c\",\r\n    \"hasFamilyHistory\":false,\r\n    \"familyHistory\":\"\",\r\n    \"hasCronicDiseases\":true,\r\n    \"chronicDiseases\":\"Diabetes tipo I\",\r\n    \"hasAllergies\":false,\r\n    \"allergies\":\"\",\r\n    \"hasDrugHistory\":true,\r\n    \"drugHistory\":\"Cannabis\",\r\n    \"hasStdHistory\":true,\r\n    \"stdHistory\":\"VPH\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/medicalHistories/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"medicalHistories",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Medical History",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/medicalHistories/62be7002189024cb7aa706d4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"medicalHistories",
+								"62be7002189024cb7aa706d4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Medical History",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pacient\":\"62bde160b865ebc72596670c\",\r\n    \"hasFamilyHistory\":true,\r\n    \"familyHistory\":\"\",\r\n    \"hasCronicDiseases\":true,\r\n    \"chronicDiseases\":\"Diabetes tipo I\",\r\n    \"hasAllergies\":true,\r\n    \"allergies\":\"\",\r\n    \"hasDrugHistory\":true,\r\n    \"drugHistory\":\"Cannabis\",\r\n    \"hasStdHistory\":true,\r\n    \"stdHistory\":\"VPH\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/medicalHistories/62be6f0c189024cb7aa706d0",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"medicalHistories",
+								"62be6f0c189024cb7aa706d0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get History by Pacient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/medicalHistories/pacient/62bde160b865ebc72596670c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"medicalHistories",
+								"pacient",
+								"62bde160b865ebc72596670c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -2,6 +2,10 @@
 var express = require('express');
 var mongooose = require('mongoose');
 var bodyParser = require('body-parser');
+require("dotenv").config();
+
+const DB_ACCESS_KEY = process.env.DB_ACCESS_KEY;
+const PORT = process.env.PORT;
 
 //local requires
 var DoctorRoutes = require('./api/routes/DoctorRoutes');
@@ -16,7 +20,7 @@ var MedicalHistory = require('./api/models/MedicalHistoryModel');
 
 //info about database
 mongooose.Promise = global.Promise;
-mongooose.connect('mongodb://docker:mongopw@localhost:49153', {dbName: "plenna"});
+mongooose.connect(DB_ACCESS_KEY, {dbName: "plenna"});
 
 
 var app = express();
@@ -32,7 +36,7 @@ ConsultationRoutes(app);
 MedicalHistoryRoutes(app);
 
 //start server
-app.listen(3000);
+app.listen(PORT);
 
 //notify server is running
-console.log('Medical Aplication is running on port 3000');
+console.log('Medical Aplication is running on port ' + PORT);

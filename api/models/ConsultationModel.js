@@ -25,11 +25,11 @@ const ConsultationSchema = new Schema({
     default: "",
   },
   temperature: {
-    type: float,
+    type: Number,
     nullable: true,
   },
   weight: {
-    type: float,
+    type: Number,
     nullable: true,
   },
   physicalExaminationNotes: {

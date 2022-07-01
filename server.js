@@ -7,10 +7,12 @@ var bodyParser = require('body-parser');
 var DoctorRoutes = require('./api/routes/DoctorRoutes');
 var PacientRoutes = require('./api/routes/PacientRoutes');
 var ConsultationRoutes = require('./api/routes/ConsultationRoutes');
+var MedicalHistoryRoutes = require('./api/routes/MedicalHistoryRoutes');
 
 var Doctor = require('./api/models/DoctorModels');
 var Pacient = require('./api/models/PacientModel');
 var Consultation = require('./api/models/ConsultationModel');
+var MedicalHistory = require('./api/models/MedicalHistoryModel');
 
 //info about database
 mongooose.Promise = global.Promise;
@@ -27,6 +29,7 @@ app.use(bodyParser.json());
 DoctorRoutes(app);
 PacientRoutes(app);
 ConsultationRoutes(app);
+MedicalHistoryRoutes(app);
 
 //start server
 app.listen(3000);

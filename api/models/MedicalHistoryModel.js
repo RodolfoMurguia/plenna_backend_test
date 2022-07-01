@@ -23,7 +23,7 @@ const MedicalHistorySchema = new Schema({
         type: String,
         default: ''
     },
-    hasAllergys: {
+    hasAllergies: {
         type: Boolean,
         default: false
     },
